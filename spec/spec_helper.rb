@@ -12,3 +12,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+def fixture_folder
+  Pathname.new(__dir__).join('fixtures')
+end
