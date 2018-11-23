@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "count/bits"
+
+include Count::Bits
+
+path = ARGV[0].to_s
+fail 'please provide some binary file as a parameter' unless Pathname.new(path).file?
+stats = perform(path)
+
+puts %[file: #{path}
+found #{stats['1']} bits set to 1
+found #{stats['0']} bits set to 0]
