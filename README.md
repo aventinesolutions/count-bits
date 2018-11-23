@@ -7,6 +7,7 @@ Version 1.0.0
 $ gem install bundler
 $ bundle install
 $ gem build count-bits-1.0.0.gemspec
+$ gem install count-bits-1.0.0.gem
 $ count_bits /path/to/some/file
 ```
 
